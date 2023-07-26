@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('title')->nullable(false);
             $table->string('color')->default('#FFFFFF');
-            $table->foreignIdFor(User::class)->references('id')->on('users');
+            $table->foreignIdFor(User::class)->references('id')->on('users')->onDelete('CASCADE');
             $table->timestamps();
         });
     }
