@@ -16,13 +16,13 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
 
-        $this->call([
-            UserSeeder::class,
-        ]);
+        // $this->call([
+        //     UserSeeder::class,
+        // ]);
 
-        Category::factory(50)->create();
+        User::factory(10)->create();
+        Category::factory(15)->create();
         Task::factory(30)->create();
-        // User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

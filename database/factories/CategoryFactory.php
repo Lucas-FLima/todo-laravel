@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\User;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
@@ -19,7 +20,7 @@ class CategoryFactory extends Factory
         return [
             'title' => $this->faker->text(30),
             'color' => $this->faker->safeHexColor(),
-            'user_id' => 1,
+            'user_id' => User::all()->random(),
         ];
     }
 }
