@@ -1,5 +1,5 @@
 :root {
-    --background-light: #F0F2FA;
+    --background-light: #e1e3ed;
     --background-white: #F6F5FF;
     --text-dark: #0A0040;
     --color-primary: #6143ff;
@@ -37,9 +37,53 @@ body {
 nav {
     height: 100px;
     width: calc(100vw - 100px);
-    background-color: indigo;
+    background-color: var(--background-light);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 20px;
+}
+
+.btn {
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--background-white);
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+section.graph {
+    width: 33%;
+    height: 100%;
+}
+
+.graph_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    flex: 1;
+    display: inline-block;
+}
+
+hr.linha_header {
+    flex: 1;
+    display: inline-block;
+}
+
+.graph_header-subtitle {
+    margin-top: 10px;
 }
