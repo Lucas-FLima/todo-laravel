@@ -43,6 +43,21 @@
                             <option value="">Tarefas Pendentes</option>
                         </select>
                     </div>
+                    <div class="task_list">
+                        <div class="task">
+                            <div class="title">
+                                <input type="checkbox" name="" id="">
+                                <span class="task_title">Título da Tarefa</span>
+                            </div>
+                            <div class="priority">
+                                <div class="sphere"></div>
+                                <span>Título da Tarefa</span>
+                            </div>
+                            <div class="actions">
+                                Editar - Excluir
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>

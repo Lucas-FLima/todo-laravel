@@ -103,6 +103,7 @@ hr.linha_header {
 
 .list {
     padding: 10px 15px;
+    flex: 1;
 }
 
 .list_header {
@@ -115,3 +116,51 @@ hr.linha_header {
     justify-content: flex-end;
     align-items: center;
 } */
+
+.task_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--background-light);
+}
+
+.task:hover {
+    background-color: var(--background-light);
+}
+
+.title {
+    padding: 0 5px;
+}
+
+.task_title {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.priority, .actions, .title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.sphere {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
