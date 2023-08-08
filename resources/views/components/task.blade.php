@@ -12,10 +12,10 @@
         <span>{{$data['category'] ?? ''}}</span>
     </div>
     <div class="actions">
-        <a href="{{$data['edit_url']}}">
+        <a href="{{route('task.edit')}}">
             <img src="/assets/images/icon-edit.png" alt="Botão de editar tarefa">
         </a>
-        <a href="{{$data['delete_url']}}">
+        <a href="{{route('task.delete')}}">
             <img src="/assets/images/icon-delete.png" alt="Botão de deletar tarefa">
         </a>
     </div>

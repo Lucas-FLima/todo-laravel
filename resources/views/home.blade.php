@@ -1,6 +1,6 @@
 <x-layout page="Home">
     <x-slot:btn>
-        <a href="#" class="btn btn-primary">Criar Tarefa</a>
+        <a href="{{route('task.create')}}" class="btn btn-primary">Criar Tarefa</a>
     </x-slot:btn>
     <section class="graph">
         <div class="graph_header">
@@ -33,14 +33,10 @@
         </div>
         <div class="task_list">
             @php
-                $tasks = [
-                    ['done' => false, 'title' => 'Minha Primeira Task', 'category' => 'Categoria 1', 'delete_url' => '#', 'edit_url' => '#'],
-                    ['done' => true, 'title' => 'Minha Segunda Task', 'category' => 'Categoria 2', 'delete_url' => '#', 'edit_url' => '#'], 
-                    ['done' => false, 'title' => 'Minha Terceira Task', 'category' => 'Categoria 1', 'delete_url' => '#', 'edit_url' => '#']
-                ];
+                $tasks = [['done' => false, 'title' => 'Minha Primeira Task', 'category' => 'Categoria 1', 'delete_url' => '#', 'edit_url' => '#'], ['done' => true, 'title' => 'Minha Segunda Task', 'category' => 'Categoria 2', 'delete_url' => '#', 'edit_url' => '#'], ['done' => false, 'title' => 'Minha Terceira Task', 'category' => 'Categoria 1', 'delete_url' => '#', 'edit_url' => '#']];
             @endphp
-            <x-task :data=$tasks[0]/>
-            <x-task :data=$tasks[1]/>
+            <x-task :data=$tasks[0] />
+            <x-task :data=$tasks[1] />
             <x-task :data=$tasks[2] />
         </div>
     </section>
