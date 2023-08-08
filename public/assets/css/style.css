@@ -30,6 +30,10 @@ body {
     background-color: var(--color-primary);
 }
 
+.sidebar img {
+    max-width: 100%;
+}
+
 /* .content {
     width: 100%;
 } */
@@ -76,12 +80,24 @@ section.graph {
 }
 
 h2 {
-    flex: 1;
+    flex: 2;
+    font-size: 18px;
     display: inline-block;
 }
 
-hr.linha_header {
-    width: 130px;
+.graph_header-line {
+    flex: 1;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2px;
+    margin-right: 3px;
+}
+
+.graph_header-date {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .graph_header-subtitle {
@@ -92,13 +108,17 @@ hr.linha_header {
     background-color: #ccc;
     width: 300px;
     height: 300px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 35px;
+    background: url('/assets/images/graph.png');
+    background-size: contain;
 }
 
-.graph_header-tasks_left {
-    text-align: center;
-    margin-top: 10px;
+.tasks_left_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .list {
@@ -146,7 +166,9 @@ hr.linha_header {
     padding-left: 10px;
 }
 
-.priority, .actions, .title {
+.priority,
+.actions,
+.title {
     display: flex;
     align-items: center;
     flex: 1;
@@ -163,4 +185,9 @@ hr.linha_header {
 .actions {
     display: flex;
     justify-content: flex-end;
+}
+
+.actions a {
+    margin-left: 20px;
+    margin-right: 10px;
 }

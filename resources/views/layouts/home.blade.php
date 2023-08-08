@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            Logo
+            <img src="/assets/images/logo.png" alt="Logo do site">
         </div>
         <div class="content">
             <nav>
@@ -25,15 +25,21 @@
                 <section class="graph">
                     <div class="graph_header">
                         <h2>Progresso do Dia</h2>
-                        <hr class="linha_header">
-                        Data
+                        <div class="graph_header-line"></div>
+                        <div class="graph_header-date">
+                            Data
+                        </div>
                     </div>
                     <div class="graph_header-subtitle">
                         Tarefas: <b>3/6</b>
                     </div>
                     <div class="graph-placeholder">
                     </div>
-                    <p class="graph_header-tasks_left">Restam 3 tarefas para serem realizadas</p>
+
+                    <div class="tasks_left_footer">
+                        <img src="/assets/images/icon-info.png" alt="Ícone de informções">
+                        Restam 3 tarefas para serem realizadas
+                    </div>
                 </section>
                 <section class="list">
                     <div class="list_header">
@@ -54,7 +60,12 @@
                                 <span>Título da Tarefa</span>
                             </div>
                             <div class="actions">
-                                Editar - Excluir
+                                <a href="#">
+                                    <img src="/assets/images/icon-edit.png" alt="Botão de editar tarefa">
+                                </a>
+                                <a href="#">
+                                    <img src="/assets/images/icon-delete.png" alt="Botão de deletar tarefa">
+                                </a>
                             </div>
                         </div>
                     </div>
