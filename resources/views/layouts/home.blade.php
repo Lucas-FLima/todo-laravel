@@ -27,7 +27,9 @@
                         <h2>Progresso do Dia</h2>
                         <div class="graph_header-line"></div>
                         <div class="graph_header-date">
-                            Data
+                            <img src="/assets/images/icon-prev.png" alt="Botão de diminuir 1 Dia">
+                            13 de Dez
+                            <img src="/assets/images/icon-next.png" alt="Botão de aumentar 1 Dia">
                         </div>
                     </div>
                     <div class="graph_header-subtitle">

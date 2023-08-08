@@ -69,13 +69,12 @@ a.btn {
 
 main {
     display: flex;
-    padding: 20px;
 }
 
 section.graph {
     width: 33%;
     height: 100%;
-    padding: 5px;
+    padding: 20px 20px 0px 20px;
 }
 
 .graph_header {
@@ -103,6 +102,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 9px;
 }
 
 .graph_header-subtitle {
@@ -127,7 +127,7 @@ h2 {
 }
 
 .list {
-    padding: 10px 15px;
+    padding: 20px 20px 0 20px;
     flex: 1;
 }
 
@@ -135,12 +135,14 @@ h2 {
     display: flex;
 }
 
-/* .list_header-select {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-} */
+.list_header-select {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    font-weight: medium;
+    font-size: 18px;
+}
 
 .task_list {
     display: flex;
