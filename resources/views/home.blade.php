@@ -1,6 +1,6 @@
 <x-layout page="Home">
     <x-slot:btn>
-        <a href="{{route('task.create')}}" class="btn btn-primary">Criar Tarefa</a>
+        <a href="{{ route('task.create') }}" class="btn btn-primary">Criar Tarefa</a>
     </x-slot:btn>
     <section class="graph">
         <div class="graph_header">
@@ -33,7 +33,7 @@
         </div>
         <div class="task_list">
             @foreach ($tasks as $task)
-            <x-task :data=$task />
+                <x-task :data=$task />
             @endforeach
         </div>
     </section>

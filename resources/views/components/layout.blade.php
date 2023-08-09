@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Todo: {{$page ?? 'Page'}}</title>
+    <title>Todo: {{ $page ?? 'Page' }}</title>
 </head>
 
 <body>
@@ -19,10 +19,10 @@
         </div>
         <div class="content">
             <nav>
-                {{$btn ?? null}}
+                {{ $btn ?? null }}
             </nav>
             <main>
-                {{$slot}}
+                {{ $slot }}
             </main>
         </div>
     </div>
